@@ -181,7 +181,7 @@ h4, .h4 {
 
 /* Hero card background behavior */
 .hero-card {
-  min-height: 350px;
+  min-height: 250px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
