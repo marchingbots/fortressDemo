@@ -1,0 +1,352 @@
+:root {
+  --law-bg: #ffffff;
+  --law-text: #111111;
+  --law-muted: #5f5f5f;
+  --law-border: #dedede;
+  --law-soft: #f6f6f6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.law-page {
+  background: var(--law-bg);
+  color: var(--law-text);
+  font-family: "Roboto", sans-serif;
+}
+
+body.law-page header,
+body.law-page footer {
+  background: #000;
+}
+
+body.law-page .navbar-brand,
+body.law-page .navbar-nav .nav-link,
+body.law-page footer .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.law-page .navbar-brand:hover,
+body.law-page .navbar-nav .nav-link:hover,
+body.law-page footer .nav-link:hover {
+  color: #fff;
+}
+
+.section-kicker {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--law-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.section-block {
+  padding: 6rem 0;
+  border-bottom: 1px solid var(--law-border);
+}
+
+.section-intro {
+  max-width: 52rem;
+  margin-bottom: 2.5rem;
+  color: var(--law-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.section-heading-lg {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4.25rem);
+  line-height: 0.98;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: var(--law-text);
+}
+
+/* HERO */
+
+.law-hero {
+  padding: 7rem 0 6rem;
+  background: #fff;
+  border-bottom: 1px solid var(--law-border);
+}
+
+.law-hero-title {
+  max-width: 12ch;
+  margin: 0 0 1.5rem;
+  font-size: clamp(3rem, 7vw, 6.25rem);
+  line-height: 0.96;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  color: #111;
+}
+
+.law-hero-copy {
+  max-width: 48rem;
+  margin: 0 0 1.25rem;
+  color: #222;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.law-hero-copy--last {
+  margin-bottom: 2rem;
+}
+
+.law-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.law-hero-actions .btn {
+  padding: 0.9rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.law-hero-link {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.law-hero-link:hover {
+  text-decoration: underline;
+}
+
+/* WHO WE SERVE */
+
+.who-we-serve {
+  background: #fff;
+}
+
+.serve-card {
+  height: 100%;
+}
+
+.serve-card-inner {
+  height: 100%;
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+  border-radius: 1.5rem;
+}
+
+.serve-card h3 {
+  margin-bottom: 0.85rem;
+  color: #fff;
+  font-size: 1.45rem;
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.serve-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* EXPERTISE LIST */
+
+.law-focus {
+  background: #fff;
+}
+
+.law-focus-list {
+  border-top: 1px solid var(--law-border);
+}
+
+.law-focus-item {
+  display: flex;
+  align-items: center;
+  min-height: 88px;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--law-border);
+}
+
+.law-focus-item span {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+/* LEADERSHIP / CONTACT */
+
+.leadership-grid {
+  align-items: stretch;
+}
+
+.leadership-card--minimal {
+  height: 100%;
+  padding: 2rem 0 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--law-border);
+  border-radius: 0;
+}
+
+.leadership-name {
+  margin-bottom: 0.25rem;
+  font-size: 1.35rem;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.leadership-title {
+  margin-bottom: 1rem;
+  color: var(--law-muted);
+  font-size: 0.95rem;
+}
+
+.leadership-card--minimal p {
+  margin: 0;
+  max-width: 32rem;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-block {
+  padding-top: 2rem;
+  border-top: 1px solid var(--law-border);
+}
+
+.contact-block h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.contact-block p {
+  margin: 0;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contact-list--spacious {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list--spacious li {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.25rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--law-border);
+  color: #111;
+}
+
+.contact-list--spacious li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.contact-list--spacious strong {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111;
+}
+
+.contact-list--spacious span {
+  color: #222;
+  line-height: 1.75;
+}
+
+.contact-list--spacious a {
+  color: #111;
+  text-decoration: none;
+}
+
+.contact-list--spacious a:hover {
+  text-decoration: underline;
+}
+
+/* CTA */
+
+.cta-strip {
+  padding: 5rem 0 6rem;
+  background: #fff;
+}
+
+.cta-minimal {
+  padding-top: 2rem;
+  border-top: 1px solid var(--law-border);
+}
+
+.cta-minimal-copy {
+  margin: 0 0 1.25rem;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.cta-minimal-actions .btn {
+  padding: 0.9rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+footer {
+  margin-top: auto;
+}
+
+@media (max-width: 991.98px) {
+  .law-hero {
+    padding: 5rem 0 4rem;
+  }
+
+  .section-block {
+    padding: 4rem 0;
+  }
+
+  .serve-card-inner,
+  .leadership-card,
+  .contact-card,
+  .cta-box {
+    padding: 1.5rem;
+  }
+
+  .law-focus-item {
+    min-height: 72px;
+  }
+}
+@media (max-width: 991.98px) {
+  .leadership-card--minimal {
+    padding-top: 1.5rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-block {
+    padding-top: 1.5rem;
+  }
+
+  .contact-list--spacious li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+}
